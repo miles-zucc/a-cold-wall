@@ -1,0 +1,387 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "INTERFACE",
+        "name": "Node",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "User"
+          },
+          {
+            "name": "Comment"
+          },
+          {
+            "name": "CommentAuthor"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "ContentType"
+          },
+          {
+            "name": "Taxonomy"
+          },
+          {
+            "name": "Category"
+          },
+          {
+            "name": "PostFormat"
+          },
+          {
+            "name": "Tag"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          },
+          {
+            "name": "UserRole"
+          },
+          {
+            "name": "Menu"
+          },
+          {
+            "name": "MenuItem"
+          },
+          {
+            "name": "Plugin"
+          },
+          {
+            "name": "Theme"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "ContentNode",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "UniformResourceIdentifiable",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "User"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Category"
+          },
+          {
+            "name": "PostFormat"
+          },
+          {
+            "name": "Tag"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "CommentAuthorUnion",
+        "possibleTypes": [
+          {
+            "name": "User"
+          },
+          {
+            "name": "CommentAuthor"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "PostObjectUnion",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithTitle",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithContentEditor",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithAuthor",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Page"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithFeaturedImage",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithComments",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          },
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Page"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "HierarchicalContentNode",
+        "possibleTypes": [
+          {
+            "name": "MediaItem"
+          },
+          {
+            "name": "Page"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithExcerpt",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithTrackbacks",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithRevisions",
+        "possibleTypes": [
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "TermNode",
+        "possibleTypes": [
+          {
+            "name": "Category"
+          },
+          {
+            "name": "PostFormat"
+          },
+          {
+            "name": "Tag"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "TermObjectUnion",
+        "possibleTypes": [
+          {
+            "name": "Category"
+          },
+          {
+            "name": "Tag"
+          },
+          {
+            "name": "PostFormat"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "NodeWithPageAttributes",
+        "possibleTypes": [
+          {
+            "name": "Page"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "ContentRevisionUnion",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "Persona_Sections_section_Slider_slides_Product",
+        "possibleTypes": [
+          {
+            "name": "Product"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "MenuItemObjectUnion",
+        "possibleTypes": [
+          {
+            "name": "Post"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "Persona"
+          },
+          {
+            "name": "Product"
+          },
+          {
+            "name": "Category"
+          },
+          {
+            "name": "Tag"
+          },
+          {
+            "name": "MenuItem"
+          }
+        ]
+      }
+    ]
+  }
+}

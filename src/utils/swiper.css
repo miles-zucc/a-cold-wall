@@ -1,0 +1,33 @@
+.swiper-container {
+  /* height: 80vh; */
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.full-width .swiper-slide {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a1a1a1;
+}
+
+.swiper-pagination-bullet {
+  width: 34px;
+  height: 2px;
+  background: #d8d8d8;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  height: 4px;
+  background: #959595;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 10px;
+}
